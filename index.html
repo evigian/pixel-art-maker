@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pixel Art Maker!</title>
+  <link href="https://fonts.googleapis.com/css?family=Risque|Roboto|Satisfy" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Lab: Pixel Art Maker</h1>
+  </header>
+  <h2>Choose Grid Size</h2>
+  <form id="sizePicker">
+    Grid Height:
+    <input type="number" id="input_height" name="height" min="1" max=60 value="20"> Grid Width:
+    <input type="number" id="input_width" name="width" min="1" max=60 value="20">
+    <input type="submit" value="Submit" id="submit" class="button1">
+    <input type="submit" value="Reset" id="reset" class="button2">
+  </form>
+
+  <h2>Pick A Color</h2>
+  <input type="color" id="colorPicker" value="#800080" ;>
+
+  <h2>Design Canvas</h2>
+  <table id="pixel_canvas"></table>
+
+  <div class="container">
+    <p>Google Developers Challenge Scholarship, 2017<span></span></p>
+    <p>@Udacity</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="designs.js"></script>
+</body>
+
+</html>
